@@ -7,19 +7,19 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lora:400i|Open+Sans|Fjalla+One');
 
-        * 
-            padding: 0
+        * {
+            padding: 0;
             margin: 0;
-            font-family: 'Open Sans', sans-serif
+            font-family: 'Open Sans', 'sans-serif';
             box-sizing: border-box;
         }
 
-        :selection {
+        ::selection {
             background: #ff9100;
             color: black;
         }
 
-        wrapper {
+        #wrapper {
             background: url(./imgs/bg.jpg) no-repeat center 95%;
             max-width: 100%;
             color: white;
@@ -29,17 +29,18 @@
         nav {
             position: relative;
             max-width: 100%;
-            width: 98%
+            width: 98%;
             margin: 15px;
             display: inline-block;
-        
+
+        }
 
         nav ul {
             list-style: none;
             text-align: right;
         }
 
-        nav > li {
+        nav li {
             margin: 5px;
             display: inline-block;
         }
@@ -52,13 +53,14 @@
             text-decoration: none;
             display: inline-block;
             color: white;
-        
 
-        a::hover {
-            background-color: rgba(255, 255, 255, 0.25)
         }
 
-        a#border-btn {
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .border-btn {
             text-transform: uppercase;
             border: 2px solid #ffffff;
             font-size: 90%;
@@ -78,13 +80,13 @@
             margin: 20px;
         }
 
-        main 
-            margin: 35px auto 0
+        main {
+            margin: 35px auto 0;
             text-align: center;
         }
 
-        h1
-        h3
+        h1,
+        h3,
         h4 {
             margin: 25px;
         }
@@ -94,7 +96,7 @@
             text-transform: uppercase;
         }
 
-        h1. {
+        h1 {
             font-size: 130pt;
             text-transform: uppercase;
             font-family: "Fjalla One";
@@ -105,7 +107,7 @@
             text-transform: capitalize;
         }
 
-        .nace-font {
+        .nice-font {
             font-family: "Lora";
         }
     </style>
